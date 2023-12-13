@@ -1,0 +1,15 @@
+.iconTextContainer:hover div {
+    opacity: 0;
+}
+
+.iconTextContainer:hover p {
+    opacity: 1;
+}
+
+.iconImgContainer:hover .primaryIconButton {
+    opacity: 0;
+}
+
+.iconImgContainer:hover div:nth-child(2) {
+    opacity: 1;
+}

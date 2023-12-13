@@ -1,0 +1,35 @@
+.anchorVisit::after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--lt-color-green-100);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    scale: 0;
+    transition: scale .5s;
+    -webkit-transition: scale .5s;
+    -moz-transition: scale .5s;
+    -ms-transition: scale .5s;
+    -o-transition: scale .5s;
+}
+
+.anchorVisit:hover {
+    color: white;
+    border-color: transparent;
+}
+
+.anchorVisit {
+    transition: color .5s;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+}
+
+.anchorVisit:hover::after {
+    scale: 800%;
+}

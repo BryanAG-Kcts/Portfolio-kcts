@@ -1,0 +1,24 @@
+.dark {
+    background: var(--dark-color-body);
+    color: white;
+}
+.dark .sectionContentDarkmode {
+    background: var(--dark-color-content);
+}
+.dark .cardContentDarkmode {
+    background: var(--dark-color-card-100);
+}
+.dark .borderDarkmode {
+    border-color: var(--dark-color-border);
+}
+.dark .colorBeforeDarkmode::before {
+    color: var(--dark-color-body);
+}
+.dark .imgSection {
+    filter: brightness(0.9);
+}
+
+.dark section .air {
+    background: url('assets/images/waveDarkmode.png');
+    background-size: 1000px 100px
+}

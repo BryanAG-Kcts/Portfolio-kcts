@@ -1,0 +1,22 @@
+.scaleImage {
+    transition: scale 1s;
+    -webkit-transition: scale 1s;
+    -moz-transition: scale 1s;
+    -ms-transition: scale 1s;
+    -o-transition: scale 1s;
+}
+
+.scaleImage:hover {
+    scale: 120%;
+    transition: scale 2.5s;
+    -webkit-transition: scale 2.5s;
+    -moz-transition: scale 2.5s;
+    -ms-transition: scale 2.5s;
+    -o-transition: scale 2.5s;
+}
+
+.gridTechnologie {
+    display: grid;
+    grid-template-rows: 1fr 2.5fr;
+    gap: 1.5rem;
+}
