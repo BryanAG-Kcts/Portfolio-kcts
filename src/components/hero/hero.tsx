@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
-import kactusLogo from '../../assets/images/Kactuswow.png'
+import kactusLogo from '../../assets/images/kactuswow.png'
 import './hero.css'
 
 export function Hero () {
