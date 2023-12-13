@@ -1,4 +1,4 @@
-import { header } from '../../components/scripts/hooks/Ilanguage'
+import { header } from '../../../hooks/Ilanguage'
 import { FadeIconText } from './fadeIcon'
 
 interface FadeAnchorIconTextProps {
