@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
 import { TitleGenerator } from '../../scripts/helpers/titleGenerator'
 import { Infos } from './info'
+import { LinkGrow } from '../../scripts/helpers/anchorGrow'
 export function Information () {
   const { information } = useContext(languageContext)
 
@@ -14,7 +15,10 @@ export function Information () {
       <TitleGenerator>
         {name}
       </TitleGenerator>
-      <Infos infos={infos} />
+      <div className='w-full max-w-[500px] flex flex-col gap-5 px-5 py-3 bg-white rounded-2xl cardContentDarkmode'>
+        <Infos infos={infos} />
+        <LinkGrow href='/cv' title='CV' />
+      </div>
     </section>
   )
 }

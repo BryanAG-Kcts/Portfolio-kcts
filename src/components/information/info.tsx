@@ -15,11 +15,11 @@ interface InfosProps {
 }
 export function Infos ({ infos }: InfosProps) {
   return (
-    <div className='w-full max-w-[500px] flex flex-col gap-5 px-5 py-3 bg-white rounded-2xl cardContentDarkmode'>
+    <>
       {
         infos.map(info => <Info key={info.name} info={info} />)
       }
-    </div>
+    </>
   )
 }
 

@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
 import kactusLogo from '../../assets/images/kactuswow.png'
 import './hero.css'
+import { AnimationIcon } from '../../scripts/helpers/animationIcon/animationIcon'
 
 export function Hero () {
   const heroContext = useContext(languageContext)
@@ -14,8 +15,12 @@ export function Hero () {
 
         <div className='flex flex-col gap-4 px-3 text-center text-white md:text-left md:max-w-md'>
           <h1 className='text-[40px] lg:text-[50px]'>
-            {hero.title}
-            <br />
+            <div className='flex gap-3'>
+              {hero.title}
+              <AnimationIcon>
+                👋
+              </AnimationIcon>
+            </div>
             {hero.heroName}
           </h1>
 
