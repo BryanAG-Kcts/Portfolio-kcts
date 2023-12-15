@@ -6,8 +6,8 @@ import { Project } from './projects/project'
 import { Information } from './information/information'
 import { Gallery } from './gallery/gallery'
 import { Header } from './header/header'
-
 import { languageContext } from '../scripts/constants/languageConstants'
+import { AboutMe } from './about/aboutMe'
 
 export function Portfolio () {
   const { isLoading } = useContext(languageContext)
@@ -29,7 +29,12 @@ export function Portfolio () {
         </div>
 
         <Gallery />
+
+        <div id='aboutContent' className='w-full bg-slate-100 rounded-lg sectionContentDarkmode'>
+          <AboutMe />
+        </div>
       </section>
+
     </>
   )
 }

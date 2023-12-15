@@ -6,7 +6,7 @@ export const FadeIconText = ({ icon, name } : fadeIconText) => {
   return (
     <>
       <ReactSVG src={icon} className='absolute w-10 h-10' />
-      <p className='text-lg font-semibold transition-opacity opacity-0'>{name}</p>
+      <p className='text-lg font-semibold transition-opacity opacity-0 h-10'>{name}</p>
     </>
   )
 }

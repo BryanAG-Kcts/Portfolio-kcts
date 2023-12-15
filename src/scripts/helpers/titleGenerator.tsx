@@ -3,7 +3,7 @@ interface TitleGeneratorProps {
 }
 export function TitleGenerator ({ children } : TitleGeneratorProps) {
   return (
-    <h3 className='text-xl font-semibold text-center sm:text-2xl whitespace-nowrap font-quickSand'>
+    <h3 className='text-xl font-semibold text-center sm:text-2xl font-quickSand'>
       {children}
       <span className='text-4xl text-lt-color-green-200'>.</span>
     </h3>

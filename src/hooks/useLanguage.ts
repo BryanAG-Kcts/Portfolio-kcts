@@ -31,7 +31,7 @@ export function useLanguage () {
     })
   }, [selectedLanguage])
 
-  const { header, hero, information, project, skill } = language
+  const { header, hero, information, project, skill, about, softSkill } = language
 
   return {
     header,
@@ -39,6 +39,8 @@ export function useLanguage () {
     information,
     project,
     skill,
+    about,
+    softSkill,
     setLanguage,
     selectedLanguage,
     setSelectedLanguage,

@@ -14,7 +14,6 @@ export function Header () {
 
   const auxHeader = header.slice(0, header.length - 1)
   const changeLanguage = header[header.length - 1]
-
   const nextLanguageName = nextLanguage[selectedLanguage]
 
   return (

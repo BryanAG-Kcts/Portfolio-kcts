@@ -53,6 +53,24 @@ export interface information {
     name: string
     infos: info[]
 }
+interface softSkills {
+    title: string;
+    content: string;
+}
+
+interface about {
+    title: string;
+    paragraph1: string;
+    paragraph2: string;
+    paragraph3: string;
+    paragraph4: string;
+}
+
+interface softSkill {
+    title: string;
+    paragraph: string;
+    softSkills: softSkills[];
+}
 
 export interface ILanguage {
     header: header[]
@@ -60,4 +78,6 @@ export interface ILanguage {
     skill: skills
     project: projects
     information: information
+    about: about;
+    softSkill: softSkill;
 }

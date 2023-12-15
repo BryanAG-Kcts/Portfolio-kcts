@@ -12,11 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <LanguageContext>
     <BrowserRouter>
       <Routes>
-        <Route
-          path='/' element={
-            <Portfolio />
-          }
-        />
+        <Route path='/' element={<Portfolio />} />
         <Route path='/cv' element={<Curriculum />} />
         <Route path='*' element={<Page404 />} />
       </Routes>
