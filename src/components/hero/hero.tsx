@@ -15,7 +15,7 @@ export function Hero () {
 
         <div className='flex flex-col gap-4 px-3 text-center text-white md:text-left md:max-w-md'>
           <h1 className='text-[40px] lg:text-[50px]'>
-            <div className='flex gap-3'>
+            <div className='flex gap-3 justify-center sm:justify-start'>
               {hero.title}
               <AnimationIcon>
                 👋

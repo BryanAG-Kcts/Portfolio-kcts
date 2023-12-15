@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+
 import { Hero } from './hero/hero'
 import { Skill } from './skills/skill'
 import { Project } from './projects/project'
@@ -5,7 +7,13 @@ import { Information } from './information/information'
 import { Gallery } from './gallery/gallery'
 import { Header } from './header/header'
 
+import { languageContext } from '../scripts/constants/languageConstants'
+
 export function Portfolio () {
+  const { isLoading } = useContext(languageContext)
+
+  if (isLoading) return null
+
   return (
     <>
       <Header />

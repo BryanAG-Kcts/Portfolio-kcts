@@ -7,10 +7,10 @@ interface LanguageContextProps {
 }
 
 export function LanguageContext ({ children }: LanguageContextProps) {
-  const { header, hero, information, project, skill, setSelectedLanguage, setLanguage, selectedLanguage } = useLanguage()
+  const { header, hero, information, project, skill, setSelectedLanguage, setLanguage, selectedLanguage, isLoading } = useLanguage()
 
   return (
-    <languageContext.Provider value={{ header, hero, information, project, skill, setSelectedLanguage, setLanguage, selectedLanguage }}>
+    <languageContext.Provider value={{ header, hero, information, project, skill, setSelectedLanguage, setLanguage, selectedLanguage, isLoading }}>
       {children}
     </languageContext.Provider>
   )
