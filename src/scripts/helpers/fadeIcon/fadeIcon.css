@@ -13,3 +13,13 @@
 .iconImgContainer:hover div:nth-child(2) {
     opacity: 1;
 }
+
+.iconTextContainer,
+.iconImgContainer {
+    z-index: 10;
+}
+
+.iconTextContainer *,
+.iconImgContainer * {
+    z-index: -1;
+}

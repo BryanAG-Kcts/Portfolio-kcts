@@ -32,7 +32,7 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
   const colorTechnologie = getColorsTechnologie(color)
 
   return (
-    <div className='relative flex flex-col max-w-sm gap-3 p-2 bg-white rounded-lg cardContentDarkmode'>
+    <div className='relative flex flex-col max-w-sm gap-3 p-2 bg-white rounded-lg cardContentDarkmode reveal'>
 
       <div className='flex flex-col justify-between gap-3'>
         <picture className='overflow-hidden rounded-lg'>

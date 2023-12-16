@@ -11,7 +11,7 @@ export function Information () {
   const { name, infos } = information
 
   return (
-    <section className='flex flex-col items-center w-full gap-4 font-quickSand'>
+    <section className='flex flex-col items-center w-full gap-4 font-quickSand reveal'>
       <TitleGenerator>
         {name}
       </TitleGenerator>
