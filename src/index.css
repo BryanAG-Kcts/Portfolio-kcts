@@ -110,7 +110,7 @@
 	animation: reveal linear both;
 	-webkit-animation: reveal linear both;
 	animation-timeline: view();
-	animation-range: entry 5% cover 15%;
+	animation-range: entry var(--delayEntry, 5%) cover var(--delayCover, 15%);
 }
 
 @keyframes reveal {
