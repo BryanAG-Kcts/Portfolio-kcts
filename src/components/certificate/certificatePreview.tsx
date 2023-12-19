@@ -20,7 +20,7 @@ interface CertificatePreviewProps {
 }
 
 export const CertificatePreview = ({ certificate } : CertificatePreviewProps) => {
-  const { img, name } = certificate
+  const { img, name, pdf } = certificate
 
   return (
     <div className='flex flex-col gap-4 p-3 rounded-lg max-w-xl bg-slate-100'>
@@ -28,7 +28,7 @@ export const CertificatePreview = ({ certificate } : CertificatePreviewProps) =>
         <img src={img} alt={name} className='hover:scale-110 transition-transform w-full h-full object-cover' />
       </picture>
 
-      <LinkGrow href={`/certificate/${name}`} title={name} />
+      <LinkGrow href={`/certificate/${pdf}`} title={name} />
 
     </div>
   )
