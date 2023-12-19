@@ -72,12 +72,18 @@ interface softSkill {
     softSkills: softSkills[];
 }
 
+interface indie {
+    cvLink: string,
+    certificateLink: string
+}
+
 export interface ILanguage {
     header: header[]
     hero: hero
     skill: skills
     project: projects
     information: information
-    about: about;
-    softSkill: softSkill;
+    about: about
+    softSkill: softSkill
+    indie: indie
 }

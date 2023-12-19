@@ -1,16 +1,14 @@
-import { useCV } from '../../hooks/useCV'
-import { LinkHome } from './linkHome'
+import { usePDF } from '../../hooks/usePDF'
+import { ShowPDF } from '../../scripts/helpers/showPDF/showPDF'
+import { cvLinks } from '../../scripts/constants/pdfConstants'
 export const Curriculum = () => {
-  const { cv } = useCV()
+  const { pdf } = usePDF(cvLinks.cv)
 
-  if (!cv) {
+  if (!pdf) {
     return
   }
 
   return (
-    <section className='w-screen h-screen relative p-7 bg-gradient-to-r bgGradientGreenBlue'>
-      <iframe src={cv} className='w-full h-full rounded-3xl' />
-      <LinkHome />
-    </section>
+    <ShowPDF pdf={pdf} />
   )
 }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import goBack from '../../assets/images/icons/return.svg'
+import goBack from '../../../assets/images/icons/return.svg'
 
 export const LinkHome = () => {
   return (
