@@ -16,9 +16,14 @@
 }
 .dark .imgSection {
     filter: brightness(0.9);
+    -webkit-filter: brightness(0.9);
+}
+.dark .bgBrightness {
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
 }
 
 .dark section .air {
-    background: url('assets/images/waveDarkmode.png');
-    background-size: 1000px 100px
+    background: url("assets/images/waveDarkmode.png");
+    background-size: 1000px 100px;
 }
