@@ -8,11 +8,12 @@ import { Gallery } from './gallery/gallery'
 import { Header } from './header/header'
 import { languageContext } from '../scripts/constants/languageConstants'
 import { AboutMe } from './about/aboutMe'
+import { LoaderPage } from './loaderComponent/loader'
 
 export function Portfolio () {
   const { isLoading } = useContext(languageContext)
 
-  if (isLoading) return null
+  if (isLoading) return <LoaderPage />
 
   return (
     <>

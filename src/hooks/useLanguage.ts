@@ -24,10 +24,13 @@ export function useLanguage () {
       return
     }
 
+    console.time('fetchDataJson')
+
     fetchDataJson(languagesUrl[selectedLanguage]).then((data: ILanguage) => {
       isLoading.current = false
       setLanguage(data)
       cachedLanguages.current[selectedLanguage] = data
+      console.timeEnd('fetchDataJson')
     })
   }, [selectedLanguage])
 
