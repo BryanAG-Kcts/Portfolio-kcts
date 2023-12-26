@@ -3,7 +3,7 @@ import branch from '../assets/images/icons/branchLeaves.svg'
 
 export const Page404 = () => {
   return (
-    <section className='w-full h-screen font-quickSand grid place-content-center bgGradientGreenBlue relative overflow-hidden'>
+    <section className='w-full h-screen font-quickSand grid place-content-center bgPolygonal relative overflow-hidden'>
 
       <div className='flex flex-col items-center gap-3 z-10 text-center'>
         <h1 className='text-9xl font-bold'>404</h1>
