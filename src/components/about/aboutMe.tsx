@@ -1,6 +1,6 @@
 import { About } from './about'
 import { SoftSkills } from './softSkills'
-import perfil from '../../assets/images/herobg.svg'
+import aboutKcts from '../../assets/images/meAbout.jpg'
 import { LinkGrow } from '../../scripts/helpers/anchorGrow'
 import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
@@ -17,7 +17,7 @@ export const AboutMe = () => {
 
       <section className='flex flex-col gap-4 lg:flex-1'>
 
-        <img className='aspect-square object-cover rounded-lg max-w-sm w-full mx-auto' src={perfil} alt='🌵' />
+        <img className='aspect-square object-cover rounded-lg max-w-sm w-full mx-auto' src={aboutKcts} alt='🌵' />
         <LinkGrow href='/cv' title={cvLink} />
         <LinkGrow href={`/certificate/langs/${selectedLanguage}`} title={certificateLink} />
 

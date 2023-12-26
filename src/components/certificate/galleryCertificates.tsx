@@ -13,14 +13,18 @@ export const GalleryCertificates = () => {
   if (!title) return <LoaderPage />
 
   return (
-    <main className='flex flex-col items-center py-7 font-quickSand gap-7 px-3 bgGradientGreenBlue bgBrightness relative'>
+    <main className='flex flex-col items-center py-7 font-quickSand gap-7 px-3 bgPolygonal relative'>
       <article className='text-white'>
         <TitleGenerator>{title}</TitleGenerator>
         <p className='text-center my-3'>{paragraph}</p>
       </article>
 
       <CertificatesPreview certificates={certificates} />
-      <DarkMode />
+
+      <div className='fixed top-0 right-0 m-6 bg-white p-3 rounded-full sectionContentDarkmode'>
+        <DarkMode />
+      </div>
+
       <LinkHome />
     </main>
   )

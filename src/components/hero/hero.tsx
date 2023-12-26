@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
-import kactusLogo from '../../assets/images/kactuswow.png'
+import heroKcts from '../../assets/images/meHero.jpg'
 import './hero.css'
 import { AnimationIcon } from '../../scripts/helpers/animationIcon/animationIcon'
 
@@ -30,7 +30,7 @@ export function Hero () {
         <span className='w-64 h-64 overflow-hidden rounded-lg md:w-72 md:h-72 lg:w-96 lg:h-96'>
           <img
             className='object-cover w-full h-full imgSection'
-            src={kactusLogo}
+            src={heroKcts}
             alt='Kactuswow'
           />
         </span>

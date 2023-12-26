@@ -11,9 +11,9 @@ import { AboutMe } from './about/aboutMe'
 import { LoaderPage } from './loaderComponent/loader'
 
 export function Portfolio () {
-  const { isLoading } = useContext(languageContext)
+  const { hero } = useContext(languageContext)
 
-  if (isLoading) return <LoaderPage />
+  if (!hero) return <LoaderPage />
 
   return (
     <>

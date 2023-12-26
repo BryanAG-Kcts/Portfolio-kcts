@@ -102,8 +102,10 @@
 	border-radius: 20px;
 }
 
-.bgGradientGreenBlue {
-	background: linear-gradient(to right top, rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234));
+.bgPolygonal {
+	background: url("./assets/images/herobg.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .reveal {
