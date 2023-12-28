@@ -9,6 +9,7 @@ import { Header } from './header/header'
 import { languageContext } from '../scripts/constants/languageConstants'
 import { AboutMe } from './about/aboutMe'
 import { LoaderPage } from './loaderComponent/loader'
+import { Footer } from './footer/Footer'
 
 export function Portfolio () {
   const { hero } = useContext(languageContext)
@@ -35,6 +36,8 @@ export function Portfolio () {
           <AboutMe />
         </div>
       </section>
+
+      <Footer />
 
     </>
   )

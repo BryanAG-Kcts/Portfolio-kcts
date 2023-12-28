@@ -9,8 +9,8 @@ export function Technologie ({ technologie, index } : TechnologieProps) {
   const { icon, name } = technologie
 
   const customStyles = {
-    '--delayEntry': `${index * 2}%`,
-    '--delayCover': `${index * 4}%`
+    '--delayEntry': `${index * 0.5 + 5}%`,
+    '--delayCover': `${index * 1 + 10}%`
   } as CSSProperties
 
   return (

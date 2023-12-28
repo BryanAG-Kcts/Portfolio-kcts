@@ -5,8 +5,6 @@ export const FollowBall = () => {
     const followBall = document.getElementById('followBall') as HTMLElement
     followBall.style.setProperty('--moveX', `${e.clientX + 30}px`)
     followBall.style.setProperty('--moveY', `${e.clientY + 30}px`)
-
-    // hay que sumarle el alto que queda atrás
   })
 
   return (

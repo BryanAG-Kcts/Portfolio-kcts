@@ -18,7 +18,7 @@ export const nextLanguage = {
 }
 
 export const getLanguageFromStore = (language: possibleLanguages) => {
-  const cachedLanguage = localStorage.getItem(`language:${language}`)
+  const cachedLanguage = sessionStorage.getItem(`language:${language}`)
   if (cachedLanguage) {
     return JSON.parse(cachedLanguage) as ILanguage
   }

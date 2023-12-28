@@ -13,7 +13,7 @@ export const AboutMe = () => {
   const { cvLink, certificateLink } = indie
 
   return (
-    <main className='font-quickSand p-4 flex flex-col gap-4 mx-auto md:flex-row-reverse max-w-6xl mt-5 reveal'>
+    <main className='font-quickSand p-4 flex flex-col gap-4 mx-auto md:flex-row-reverse max-w-6xl mt-5'>
 
       <section className='flex flex-col gap-4 lg:flex-1'>
 

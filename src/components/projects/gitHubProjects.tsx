@@ -26,8 +26,8 @@ export function GithubProject ({ gitHubProject, index } : GithubProjectProps) {
   const colorTailwind = getColorsTechnologie(color)
 
   const customStyles = {
-    '--delayEntry': `${index}%`,
-    '--delayCover': `${index * 7 - 15}%`
+    '--delayEntry': `${index * 0.5 + 5}%`,
+    '--delayCover': `${index * 3.5 + 15}%`
   } as CSSProperties
 
   return (

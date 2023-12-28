@@ -21,12 +21,10 @@ export function useLanguage () {
       return
     }
 
-    console.log('a')
-
     fetchDataJson(languagesUrl[selectedLanguage]).then((data: ILanguage) => {
       setLanguage(data)
       cachedLanguages.current[selectedLanguage] = data
-      localStorage.setItem(`language:${selectedLanguage}`, JSON.stringify(data))
+      sessionStorage.setItem(`language:${selectedLanguage}`, JSON.stringify(data))
     })
   }, [selectedLanguage])
 

@@ -16,18 +16,23 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
     <FollowBall />
 
-    <LanguageContext>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Portfolio />} />
-          <Route path='/cv' element={<Curriculum />} />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path='/' element={
+            <LanguageContext>
+              <Portfolio />
+            </LanguageContext>
+          }
+        />
+        <Route path='/cv' element={<Curriculum />} />
 
-          <Route path='/certificate/:certificate' element={<Certificate />} />
-          <Route path='/certificate/langs/:lang' element={<GalleryCertificates />} />
+        <Route path='/certificate/:certificate' element={<Certificate />} />
+        <Route path='/certificate/langs/:lang' element={<GalleryCertificates />} />
 
-          <Route path='*' element={<Page404 />} />
-        </Routes>
-      </BrowserRouter>
-    </LanguageContext>
+        <Route path='*' element={<Page404 />} />
+      </Routes>
+    </BrowserRouter>
+
   </>
 )
