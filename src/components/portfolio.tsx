@@ -9,7 +9,7 @@ import { Header } from './header/header'
 import { languageContext } from '../scripts/constants/languageConstants'
 import { AboutMe } from './about/aboutMe'
 import { LoaderPage } from './loaderComponent/loader'
-import { Footer } from './footer/Footer'
+import { Footer } from './footer/footerPage'
 
 export function Portfolio () {
   const { hero } = useContext(languageContext)
