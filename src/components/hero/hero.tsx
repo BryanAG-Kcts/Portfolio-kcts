@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
-import heroKcts from '../../assets/images/meHero.jpg'
+import heroKcts from '../../assets/images/meHero.webp'
 import './hero.css'
 import { AnimationIcon } from '../../scripts/helpers/animationIcon/animationIcon'
 

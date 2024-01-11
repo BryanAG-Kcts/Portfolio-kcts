@@ -1,6 +1,6 @@
 import { About } from './about'
 import { SoftSkills } from './softSkills'
-import aboutKcts from '../../assets/images/meAbout.jpg'
+import aboutKcts from '../../assets/images/meAbout.webp'
 import { LinkGrow } from '../../scripts/helpers/anchorGrow'
 import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
