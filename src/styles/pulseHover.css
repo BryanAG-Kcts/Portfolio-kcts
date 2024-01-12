@@ -1,0 +1,51 @@
+.pulseHover {
+    transition: scale 0.4s;
+    -webkit-transition: scale 0.4s;
+    -moz-transition: scale 0.4s;
+    -ms-transition: scale 0.4s;
+    -o-transition: scale 0.4s;
+}
+.pulseHover:hover {
+    scale: 1.1;
+}
+.pulseHover:hover::before {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 120%;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background: var(--dark-color-card-100);
+    animation: pulse 0.8s infinite linear;
+    -webkit-animation: pulse 0.8s infinite linear;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.7;
+        box-shadow: 0 0 0 0;
+    }
+
+    70% {
+        opacity: 0.3;
+        box-shadow: 0 0 0 5px;
+    }
+
+    100% {
+        opacity: 0;
+        box-shadow: 0 0 0 5px;
+    }
+}

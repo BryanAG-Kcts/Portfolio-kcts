@@ -47,7 +47,7 @@ export function WebProject ({ webProject, anchorText, index } : WebProjectProps)
         </picture>
 
         <div className='flex items-center gap-7'>
-          <h4 className='text-lg font-semibold'>{name}</h4>
+          <h3 className='text-lg font-semibold'>{name}</h3>
           <PulsationCircle color={colorTechnologie} />
         </div>
 

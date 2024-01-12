@@ -10,7 +10,7 @@ export function Gallery () {
 
   const { nameWeb, projects, anchorName } = project
   return (
-    <section id='projectsContent' className='flex flex-col gap-4 p-4 rounded-lg bg-slate-100 sectionContentDarkmode'>
+    <section id='projectsContent' className='greatSection p-4 rounded-lg bg-slate-100 sectionContentDarkmode'>
       <TitleGenerator>
         {nameWeb}
       </TitleGenerator>

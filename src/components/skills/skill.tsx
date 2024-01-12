@@ -12,9 +12,9 @@ export function Skill () {
   const { name, skills } = skill
 
   return (
-    <section className='flex flex-col gap-4'>
+    <div className='flex flex-col gap-4'>
       <TitleGenerator>{name}</TitleGenerator>
       <Technologies technologies={skills} />
-    </section>
+    </div>
   )
 }

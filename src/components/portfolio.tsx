@@ -10,6 +10,7 @@ import { languageContext } from '../scripts/constants/languageConstants'
 import { AboutMe } from './about/aboutMe'
 import { LoaderPage } from './loaderComponent/loader'
 import { Footer } from './footer/footerPage'
+import { Experience } from './experience/experience'
 
 export function Portfolio () {
   const { hero } = useContext(languageContext)
@@ -21,7 +22,9 @@ export function Portfolio () {
       <Header />
       <Hero />
 
-      <section id='mainContent' className='flex flex-col gap-4 p-2 sectionContentDarkmode'>
+      <section id='mainContent' className='greatSection p-2 sectionContentDarkmode'>
+        <Experience />
+
         <div className='flex flex-col w-full gap-6 p-3 rounded-lg sectionContentDarkmode bg-slate-100 md:flex-row'>
           <nav className='flex flex-col items-center flex-1 gap-6'>
             <Skill />

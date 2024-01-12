@@ -20,6 +20,6 @@
 }
 
 .dark section .air {
-    background: url("assets/images/waveDarkmode.png");
+    background: url("../assets/images/waveDarkmode.png");
     background-size: 1000px 100px;
 }
