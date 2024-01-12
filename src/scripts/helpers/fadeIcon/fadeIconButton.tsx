@@ -23,7 +23,7 @@ interface FadeButtonIconImgProps extends fadeIconImg {
 
 export const FadeButtonIconImg = ({ fn, primaryIcon, secondaryIcon } : FadeButtonIconImgProps) => {
   return (
-    <button onClick={fn} className='relative flex items-center justify-center w-full iconImgContainer'>
+    <button aria-label='switch' onClick={fn} className='relative flex items-center justify-center w-full iconImgContainer'>
       <FadeIconImg primaryIcon={primaryIcon} secondaryIcon={secondaryIcon} />
     </button>
   )

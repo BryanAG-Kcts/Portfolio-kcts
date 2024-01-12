@@ -86,6 +86,7 @@
 @font-face {
 	font-family: quickSand;
 	src: url("./assets/fonts/Quicksand_wght.ttf");
+	font-display: swap;
 }
 
 * {
