@@ -5,7 +5,7 @@ import { LinkGrow } from '../../scripts/helpers/anchorGrow'
 import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
 
-export const AboutMe = () => {
+const AboutMe = () => {
   const { indie, selectedLanguage } = useContext(languageContext)
 
   if (!indie) return null
@@ -17,7 +17,7 @@ export const AboutMe = () => {
 
       <section className='flex flex-col gap-4 lg:flex-1'>
 
-        <img className='aspect-square object-cover rounded-lg max-w-sm w-full mx-auto' src={aboutKcts} alt='🌵' />
+        <img draggable='false' decoding='async' loading='lazy' className='aspect-square object-cover rounded-lg max-w-sm w-full mx-auto' src={aboutKcts} alt='🌵' />
         <LinkGrow href='/cv' title={cvLink} />
         <LinkGrow href={`/certificate/langs/${selectedLanguage}`} title={certificateLink} />
 
@@ -30,3 +30,5 @@ export const AboutMe = () => {
     </main>
   )
 }
+
+export default AboutMe

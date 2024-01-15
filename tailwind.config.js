@@ -12,11 +12,13 @@ export default {
       colors: {
         'lt-color-green-100': '#00bb2d',
         'lt-color-green-200': '#19c919',
+        'dk-color-green-100': '#006100',
 
         'lt-color-gray-100': '#ededed',
         'dk-color-gray-100': '#bbb',
 
         'dk-color-blue-100': '#4040fb',
+        'dk-color-blue-200': '#1C567D',
         'lt-color-blue-100': '#5ab2da',
 
         'lt-color-orange-100': '#ffa333',
@@ -40,3 +42,5 @@ export default {
   },
   plugins: []
 }
+
+// #1F1FFF

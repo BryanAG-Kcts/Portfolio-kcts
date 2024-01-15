@@ -1,16 +1,19 @@
-import { useContext } from 'react'
+import { useContext, Suspense, lazy } from 'react'
 
 import { Hero } from './hero/hero'
 import { Skill } from './skills/skill'
 import { Project } from './projects/project'
 import { Information } from './information/information'
-import { Gallery } from './gallery/gallery'
+// import { Gallery } from './gallery/gallery'
 import { Header } from './header/header'
 import { languageContext } from '../scripts/constants/languageConstants'
-import { AboutMe } from './about/aboutMe'
+// import AboutMe from './about/aboutMe'
 import { LoaderPage } from './loaderComponent/loader'
 import { Footer } from './footer/footerPage'
 import { Experience } from './experience/experience'
+
+const Gallery = lazy(() => import('./gallery/gallery'))
+const AboutMe = lazy(() => import('./about/aboutMe'))
 
 export function Portfolio () {
   const { hero } = useContext(languageContext)
@@ -33,11 +36,13 @@ export function Portfolio () {
           <Project />
         </div>
 
-        <Gallery />
+        <Suspense fallback={null}>
+          <Gallery />
 
-        <div id='aboutContent' className='w-full bg-slate-100 rounded-lg sectionContentDarkmode'>
-          <AboutMe />
-        </div>
+          <div id='aboutContent' className='w-full bg-slate-100 rounded-lg sectionContentDarkmode'>
+            <AboutMe />
+          </div>
+        </Suspense>
       </section>
 
       <Footer />

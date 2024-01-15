@@ -4,7 +4,7 @@ import { TitleGenerator } from '../../scripts/helpers/titleGenerator'
 import { WebProjects } from './webProject'
 import './gallery.css'
 
-export function Gallery () {
+function Gallery () {
   const { project } = useContext(languageContext)
   if (!project) return null
 
@@ -18,3 +18,5 @@ export function Gallery () {
     </section>
   )
 }
+
+export default Gallery
