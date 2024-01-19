@@ -1,4 +1,3 @@
-import { CSSProperties } from 'react'
 import { project } from '../../hooks/Ilanguage'
 import { getColorsTechnologie } from './colorTechnologie'
 import { PulsationCircle } from '../../scripts/helpers/pulsationCircle'
@@ -10,7 +9,7 @@ export function GithubProjects ({ githubProjects }: GithubProjectsProps) {
   return (
     <section className='flex flex-wrap justify-center w-full gap-3'>
       {
-        githubProjects.map((githubProject, index) => <GithubProject key={githubProject.name} gitHubProject={githubProject} index={index} />)
+        githubProjects.map(githubProject => <GithubProject key={githubProject.name} gitHubProject={githubProject} />)
       }
     </section>
   )
@@ -18,20 +17,14 @@ export function GithubProjects ({ githubProjects }: GithubProjectsProps) {
 
 interface GithubProjectProps {
     gitHubProject: project
-    index: number
 }
 
-export function GithubProject ({ gitHubProject, index } : GithubProjectProps) {
+export function GithubProject ({ gitHubProject } : GithubProjectProps) {
   const { name, color, linkGitHub, technologie, desc } = gitHubProject
   const colorTailwind = getColorsTechnologie(color)
 
-  const customStyles = {
-    '--delayEntry': `${index * 0.5 + 5}%`,
-    '--delayCover': `${index * 3.5 + 15}%`
-  } as CSSProperties
-
   return (
-    <a href={linkGitHub} target='_blank' rel='noreferrer' className='relative bg-white rounded-2xl px-5 py-7 min-w-[200px] max-w-[600px] flex-1 lg:min-w-[400px] shadow-lg transition-transform hover:scale-[101%] hover:z-10 ssm:hover:scale-95 cardContentDarkmode reveal' style={customStyles}>
+    <a href={linkGitHub} target='_blank' rel='noreferrer' className='relative bg-white rounded-2xl px-5 py-7 min-w-[200px] max-w-[600px] flex-1 lg:min-w-[400px] shadow-lg transition-transform hover:scale-[101%] hover:z-10 ssm:hover:scale-95 cardContentDarkmode'>
 
       <div className='flex flex-col gap-2 mb-7 font-quickSand'>
         <h3 className='font-semibold'>{name}</h3>

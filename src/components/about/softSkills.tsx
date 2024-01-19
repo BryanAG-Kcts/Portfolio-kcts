@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { languageContext } from '../../scripts/constants/languageConstants'
 import { TitleGenerator } from '../../scripts/helpers/titleGenerator'
-import { UlGenerator } from '../../scripts/helpers/ulGenerator'
+import { UlGenerator } from '../../scripts/helpers/ulGenrator/ulGenerator'
 
 export const SoftSkills = () => {
   const { softSkill } = useContext(languageContext)

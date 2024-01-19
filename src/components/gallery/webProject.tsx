@@ -1,4 +1,3 @@
-import { CSSProperties } from 'react'
 import { project } from '../../hooks/Ilanguage'
 import { getColorsTechnologie } from '../projects/colorTechnologie'
 import { AlertTechnologies } from './alertTechnologies'
@@ -14,7 +13,7 @@ export function WebProjects ({ webProjects, anchorText } : WebProjectsProps) {
   return (
     <div className='flex flex-wrap justify-center gap-3 p-2 font-quickSand'>
       {
-        webProjects.map((webProject, index) => <WebProject key={webProject.name} webProject={webProject} anchorText={anchorText} index={index} />)
+        webProjects.map(webProject => <WebProject key={webProject.name} webProject={webProject} anchorText={anchorText} />)
       }
     </div>
   )
@@ -23,23 +22,17 @@ export function WebProjects ({ webProjects, anchorText } : WebProjectsProps) {
 interface WebProjectProps {
   webProject: project
   anchorText: string
-  index: number
 }
 
-export function WebProject ({ webProject, anchorText, index } : WebProjectProps) {
+export function WebProject ({ webProject, anchorText } : WebProjectProps) {
   const { name, linkWeb, desc, color, technologies, preview } = webProject
 
   if (!linkWeb) return null
 
   const colorTechnologie = getColorsTechnologie(color)
 
-  const customStyles = {
-    '--delayEntry': `${index * 2}%`,
-    '--delayCover': `${index * 4}%`
-  } as CSSProperties
-
   return (
-    <div className='relative flex flex-col max-w-sm gap-3 p-2 bg-white rounded-lg cardContentDarkmode reveal' style={customStyles}>
+    <div className='relative flex flex-col max-w-sm gap-3 p-2 bg-white rounded-lg cardContentDarkmode'>
 
       <div className='flex flex-col justify-between gap-3'>
         <picture className='overflow-hidden rounded-lg'>

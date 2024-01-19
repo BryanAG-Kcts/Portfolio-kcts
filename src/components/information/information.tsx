@@ -12,7 +12,7 @@ export function Information () {
   const { cvLink, certificateLink } = indie
 
   return (
-    <section className='flex flex-col items-center w-full gap-4 font-quickSand reveal'>
+    <section className='flex flex-col items-center w-full gap-4 font-quickSand'>
       <TitleGenerator>
         {name}
       </TitleGenerator>

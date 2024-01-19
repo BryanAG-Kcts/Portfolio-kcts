@@ -64,23 +64,16 @@ export interface information {
     name: string
     infos: info[]
 }
-interface softSkills {
-    title: string;
-    content: string;
-}
 
 interface about {
     title: string;
-    paragraph1: string;
-    paragraph2: string;
-    paragraph3: string;
-    paragraph4: string;
+    paragraphs: string[];
 }
 
 interface softSkill {
     title: string;
     paragraph: string;
-    softSkills: softSkills[];
+    softSkills: string[];
 }
 
 interface indie {

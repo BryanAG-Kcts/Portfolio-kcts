@@ -7,16 +7,15 @@ export const About = () => {
 
   if (!about) return null
 
-  const { paragraph1, paragraph2, paragraph3, paragraph4, title } = about
+  const { title, paragraphs } = about
 
   return (
     <article className='flex flex-col p-2 gap-3 rounded-lg'>
       <TitleGenerator>{title}</TitleGenerator>
 
-      <p>{paragraph1}</p>
-      <p>{paragraph2}</p>
-      <p>{paragraph3}</p>
-      <p>{paragraph4}</p>
+      {
+        paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)
+      }
     </article>
   )
 }
