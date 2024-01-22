@@ -4,13 +4,12 @@ import { Hero } from './hero/hero'
 import { Skill } from './skills/skill'
 import { Project } from './projects/project'
 import { Information } from './information/information'
-// import { Gallery } from './gallery/gallery'
 import { Header } from './header/header'
 import { languageContext } from '../scripts/constants/languageConstants'
-// import AboutMe from './about/aboutMe'
 import { LoaderPage } from './loaderComponent/loader'
 import { Footer } from './footer/footerPage'
 import { Experience } from './experience/experience'
+import { MetaPortfolio } from './metaPortfolio'
 
 const Gallery = lazy(() => import('./gallery/gallery'))
 const AboutMe = lazy(() => import('./about/aboutMe'))
@@ -22,6 +21,7 @@ export function Portfolio () {
 
   return (
     <>
+      <MetaPortfolio />
       <Header />
       <Hero />
 

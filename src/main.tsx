@@ -14,29 +14,34 @@ import './styles/darkMode.css'
 import './styles/pulseHover.css'
 import './styles/scroll.css'
 import './styles/utilities.css'
+import { HelmetProvider } from 'react-helmet-async'
+import { TitleWindow } from './scripts/helpers/titleWindow/titleWindow'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 
   <>
     <FollowBall />
+    <TitleWindow />
 
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path='/' element={
-            <LanguageContext>
-              <Portfolio />
-            </LanguageContext>
+    <HelmetProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path='/' element={
+              <LanguageContext>
+                <Portfolio />
+              </LanguageContext>
           }
-        />
-        <Route path='/cv' element={<Curriculum />} />
+          />
+          <Route path='/cv' element={<Curriculum />} />
 
-        <Route path='/certificate/:certificate' element={<Certificate />} />
-        <Route path='/certificate/langs/:lang' element={<GalleryCertificates />} />
+          <Route path='/certificate/:certificate' element={<Certificate />} />
+          <Route path='/certificate/langs/:lang' element={<GalleryCertificates />} />
 
-        <Route path='*' element={<Page404 />} />
-      </Routes>
-    </BrowserRouter>
+          <Route path='*' element={<Page404 />} />
+        </Routes>
+      </BrowserRouter>
+    </HelmetProvider>
 
   </>
 )

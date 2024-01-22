@@ -1,12 +1,13 @@
 import { CSSProperties } from 'react'
 import { technologie } from '../../hooks/Ilanguage'
+import { ReactSVG } from 'react-svg'
 
 interface TechnologieProps {
     technologie : technologie
     index: number
 }
 export function Technologie ({ technologie, index } : TechnologieProps) {
-  const { icon, name } = technologie
+  const { icon } = technologie
 
   const customStyles = {
     '--delayEntry': `${index * 0.5 + 5}%`,
@@ -15,7 +16,7 @@ export function Technologie ({ technologie, index } : TechnologieProps) {
 
   return (
     <span className='relative flex flex-col items-center justify-center p-4 text-center transition-transform bg-white rounded-lg select-none hover:scale-105 ssm:hover:scale-95 cardContentDarkmode reveal' style={customStyles}>
-      <img src={icon} alt={name} className='object-cover w-16 h-16' />
+      <ReactSVG src={icon} className='w-16 h-16' />
     </span>
   )
 }
