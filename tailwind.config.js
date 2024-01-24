@@ -42,5 +42,3 @@ export default {
   },
   plugins: []
 }
-
-// #1F1FFF

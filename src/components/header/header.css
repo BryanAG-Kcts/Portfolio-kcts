@@ -1,42 +1,47 @@
-.hoverHeaderContent::before {
-    content: "";
-    color: var(--lt-color-slate-100);
-    box-shadow: 0 0 150px 10px currentColor;
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
+header {
+    position: sticky;
     top: 0;
+    padding: 1rem;
+    font-family: quickSand;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 999999;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.border-b {
+    border: none;
+    border-bottom: 2px solid currentColor;
+}
+
+.hoverToModal {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.modalsection {
+    position: absolute;
+    background: white;
+    width: 100%;
+    padding: 0.75rem;
     left: 0;
+    bottom: 0;
+    transform: translateY(calc(100% + 2px));
+    -webkit-transform: translateY(calc(100% + 2px));
+    -moz-transform: translateY(calc(100% + 2px));
+    -ms-transform: translateY(calc(100% + 2px));
+    -o-transform: translateY(calc(100% + 2px));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-.headerMove {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* background: var(--tr-color-black-100); */
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-    /* backdrop-filter: blur(20px); */
+.hoverToModal:hover > .modalsection,
+.modalsection:hover {
+    display: flex;
 }
 
-.hoverHeaderContent:hover ~ .headerMove,
-.headerMove:hover {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-}
-
-.headerContent {
-    background: var(--tr-color-black-100);
-    backdrop-filter: blur(20px);
+.navHeader > * {
+    min-width: 8.75rem;
 }

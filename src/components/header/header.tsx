@@ -1,36 +1,33 @@
 import { useContext } from 'react'
-import { languageContext, nextLanguage } from '../../scripts/constants/languageConstants'
-import { FadeButtonIconText } from '../../scripts/helpers/fadeIcon/fadeIconButton'
-import { FadeAnchorIconTexts } from '../../scripts/helpers/fadeIcon/fadeIconAnchor'
-import { DarkMode } from '../../scripts/helpers/darkMode/darkMode'
+import { languageContext } from '../../scripts/constants/languageConstants'
 import './header.css'
+import { Language } from './language'
+import { Sections } from './sections'
+import { DarkMode } from '../../scripts/helpers/darkMode/darkMode'
 
 export function Header () {
-  const { header, setSelectedLanguage, selectedLanguage } = useContext(languageContext)
+  const { header } = useContext(languageContext)
 
   if (!header) {
     return null
   }
 
-  const auxHeader = header.slice(0, header.length - 1)
-  const changeLanguage = header[header.length - 1]
-  const nextLanguageName = nextLanguage[selectedLanguage]
+  const { language, section } = header
 
   return (
-    <>
-      <span className='fixed z-50 w-16 h-screen hoverHeaderContent colorBeforeDarkmode' />
+    <header className='sm:flex-row sm:justify-between sm:items-center sectionContentDarkmode'>
 
-      <header className='fixed z-40 h-screen p-5 transition-transform headerMove'>
-        <div className='h-full flex flex-col headerContent p-5 rounded-xl'>
-          <FadeAnchorIconTexts iconTexts={auxHeader} />
+      <p className='text-3xl text-center font-semibold flex-1 sm:text-left'>
+        Kactus
+        <span className='text-lt-color-green-100'>wow.</span>
+      </p>
 
-          <div className='flex flex-col gap-12'>
-            <FadeButtonIconText fn={() => setSelectedLanguage(nextLanguageName)} iconText={changeLanguage} />
-            <DarkMode />
-          </div>
-        </div>
-      </header>
+      <nav className='flex flex-1 flex-wrap gap-4 navHeader items-center'>
+        <Sections section={section} />
+        <Language language={language} />
+      </nav>
 
-    </>
+      <DarkMode />
+    </header>
   )
 }

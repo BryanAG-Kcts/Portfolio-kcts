@@ -24,3 +24,11 @@
 	-ms-border-radius: 0.5rem;
 	-o-border-radius: 0.5rem;
 }
+
+@layer components {
+	.boxCol {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+}

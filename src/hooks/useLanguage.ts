@@ -10,8 +10,17 @@ export function useLanguage () {
     en: getLanguageFromStore('en')
   })
 
-  const [language, setLanguage] = useState<ILanguage>(cachedLanguages.current.es)
-  const [selectedLanguage, setSelectedLanguage] = useState <possibleLanguages>(languages.es)
+  const [selectedLanguage, setSelectedLanguage] = useState <possibleLanguages>(() => {
+    const getSelectedLanguage = sessionStorage.getItem('selectedLanguage') as possibleLanguages
+    return getSelectedLanguage || languages.es
+  })
+
+  const [language, setLanguage] = useState<ILanguage>(cachedLanguages.current[selectedLanguage])
+
+  const setSelectedLanguageFromStore = (language: possibleLanguages) => {
+    sessionStorage.setItem('selectedLanguage', language)
+    setSelectedLanguage(language)
+  }
 
   useEffect(() => {
     const cachedLanguage = cachedLanguages.current[selectedLanguage]
@@ -32,6 +41,7 @@ export function useLanguage () {
     ...language,
     setLanguage,
     selectedLanguage,
-    setSelectedLanguage
+    setSelectedLanguage,
+    setSelectedLanguageFromStore
   }
 }

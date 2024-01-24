@@ -1,4 +1,5 @@
 import { TailwindColorsTechnolgies } from '../components/projects/colorTechnologie'
+import { header } from './Iheader'
 
 export interface experience {
     title: string,
@@ -9,12 +10,6 @@ export interface experience {
 export interface experiences {
     title: string
     experience: experience[]
-}
-
-export interface header {
-    name: string
-    link: string
-    icon: string
 }
 
 export interface hero {
@@ -83,7 +78,7 @@ interface indie {
 
 export interface ILanguage {
     experience: experiences
-    header: header[]
+    header: header
     hero: hero
     skill: skills
     project: projects

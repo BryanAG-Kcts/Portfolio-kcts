@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { themeIcon } from './darkModeConstants'
-import { FadeButtonIconImg } from '../fadeIcon/fadeIconButton'
+import './darkmode.css'
+import { ReactSVG } from 'react-svg'
 
 export const DarkMode = () => {
   const [selectColorMode, setSelectColorMode] = useState(false)
@@ -15,6 +16,9 @@ export const DarkMode = () => {
   const secondaryIcon = !selectColorMode ? moon : sun
 
   return (
-    <FadeButtonIconImg fn={changeDarkMode} primaryIcon={primaryIcon} secondaryIcon={secondaryIcon} />
+    <button className='darkmodeBtn flex relative justify-center' onClick={changeDarkMode}>
+      <ReactSVG className='firstIcon' src={primaryIcon.icon} />
+      <ReactSVG className='secondIcon' src={secondaryIcon.icon} />
+    </button>
   )
 }
