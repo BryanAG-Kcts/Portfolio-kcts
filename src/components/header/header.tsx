@@ -27,7 +27,9 @@ export function Header () {
         <Language language={language} />
       </nav>
 
-      <DarkMode />
+      <div className='flex justify-center'>
+        <DarkMode />
+      </div>
     </header>
   )
 }
