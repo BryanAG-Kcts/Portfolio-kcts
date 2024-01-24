@@ -7,7 +7,7 @@ export const Sections = ({ section } : ISection) => {
   const { sections, title } = section
   return (
     <div className='hoverToModal border-b flex-1 relative cursor-pointer'>
-      <p> {title}</p>
+      <p>{title}</p>
 
       <div className='modalsection boxCol hidden cardContentDarkmode z-50'>
         {sections.map(section => <Section key={section.name} sections={section} />)}

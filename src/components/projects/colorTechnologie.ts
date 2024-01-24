@@ -5,7 +5,7 @@ export const tailwindColorsTechnolgies = {
   css3: 'dk-color-blue-100',
   react: 'lt-color-blue-100',
   node: 'lt-color-green-100',
-  express: 'lt-color-green-100',
+  express: 'black',
   java: 'dk-color-red-100'
 }
 

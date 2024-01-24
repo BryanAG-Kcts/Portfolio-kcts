@@ -15,9 +15,9 @@ export function Header () {
   const { language, section } = header
 
   return (
-    <header className='sm:flex-row sm:justify-between sm:items-center sectionContentDarkmode'>
+    <header className='sm:flex-row sm:justify-between sm:items-center cardContentDarkmode'>
 
-      <p className='text-3xl text-center font-semibold flex-1 sm:text-left'>
+      <p className='text-3xl text-center font-semibold flex-1 sm:text-left select-none'>
         Kactus
         <span className='text-lt-color-green-100'>wow.</span>
       </p>
