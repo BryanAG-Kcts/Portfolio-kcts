@@ -17,17 +17,20 @@ export function Header () {
   return (
     <header className='sm:flex-row sm:justify-between sm:items-center cardContentDarkmode'>
 
-      <p className='text-3xl text-center font-semibold flex-1 sm:text-left select-none'>
-        Kactus
-        <span className='text-lt-color-green-100'>wow.</span>
-      </p>
+      <div className='flex flex-1 justify-between'>
+        <p className='text-3xl font-semibold sm:text-left select-none'>
+          Kactus
+          <span className='text-lt-color-green-100'>wow.</span>
+        </p>
+        <div className='sm:hidden'><DarkMode /></div>
+      </div>
 
       <nav className='flex flex-1 flex-wrap gap-4 navHeader items-center'>
         <Sections section={section} />
         <Language language={language} />
       </nav>
 
-      <div className='flex justify-center'>
+      <div className='sm:flex justify-center hidden'>
         <DarkMode />
       </div>
     </header>

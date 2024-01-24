@@ -16,7 +16,7 @@ export const DarkMode = () => {
   const secondaryIcon = !selectColorMode ? moon : sun
 
   return (
-    <button className='darkmodeBtn flex relative justify-center' onClick={changeDarkMode}>
+    <button aria-label='Darkmode' className='darkmodeBtn flex relative justify-center' onClick={changeDarkMode}>
       <ReactSVG className='firstIcon' src={primaryIcon.icon} />
       <ReactSVG className='secondIcon' src={secondaryIcon.icon} />
     </button>
