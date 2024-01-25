@@ -38,6 +38,7 @@ export interface project {
     linkWeb?: string
     preview?: string
     technologies: technologie[]
+    type : 'backend' | 'frontend' | 'fullStack'
 }
 
 export interface projects {

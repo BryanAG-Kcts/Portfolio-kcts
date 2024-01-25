@@ -20,7 +20,10 @@ interface GithubProjectProps {
 }
 
 export function GithubProject ({ gitHubProject } : GithubProjectProps) {
-  const { name, color, linkGitHub, technologie, desc } = gitHubProject
+  const { name, color, linkGitHub, technologie, desc, type } = gitHubProject
+
+  if (type === 'frontend') return
+
   const colorTailwind = getColorsTechnologie(color)
 
   return (

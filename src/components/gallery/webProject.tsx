@@ -25,9 +25,9 @@ interface WebProjectProps {
 }
 
 export function WebProject ({ webProject, anchorText } : WebProjectProps) {
-  const { name, linkWeb, desc, color, technologies, preview } = webProject
+  const { name, linkWeb, desc, color, technologies, preview, type, linkGitHub } = webProject
 
-  if (!linkWeb) return null
+  if (type === 'backend' || !linkWeb) return null
 
   const colorTechnologie = getColorsTechnologie(color)
 
@@ -48,12 +48,14 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
 
       <div className='flex-1 gridTechnologie '>
 
-        <div className='flex flex-col justify-between gap-3'>
+        <div className='flex flex-col justify-between gap-5'>
 
           <p>{desc}</p>
 
-          <AnchorGrow href={linkWeb} title={anchorText} />
-
+          <div className='flex flex-wrap anchorsGallery gap-2'>
+            <AnchorGrow href={linkWeb} title={anchorText} />
+            <AnchorGrow href={linkGitHub} title='Github' />
+          </div>
         </div>
 
         <div className='flex items-center flex-1 rounded-lg bg-slate-100 sectionContentDarkmode'>

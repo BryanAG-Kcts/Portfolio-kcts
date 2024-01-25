@@ -17,6 +17,11 @@
 
 .gridTechnologie {
     display: grid;
-    grid-template-rows: 1fr 2.5fr;
+    grid-template-rows: 1fr 2fr;
     gap: 1.5rem;
+}
+
+.anchorsGallery > * {
+    flex: 1 1 0;
+    min-width: 10rem;
 }
