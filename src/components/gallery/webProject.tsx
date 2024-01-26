@@ -36,7 +36,7 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
 
       <div className='flex flex-col justify-between gap-3'>
         <picture className='overflow-hidden rounded-lg'>
-          <img className='object-cover w-full h-full ease-in scaleImage aspect-square' src={preview} alt={name} />
+          <img decoding='async' loading='lazy' className='object-cover w-full h-full ease-in scaleImage aspect-square' src={preview} alt={name} />
         </picture>
 
         <div className='flex items-center gap-7'>
