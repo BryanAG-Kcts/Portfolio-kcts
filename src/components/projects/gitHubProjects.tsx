@@ -9,7 +9,7 @@ export function GithubProjects ({ githubProjects }: GithubProjectsProps) {
   return (
     <section className='flex flex-wrap justify-center w-full gap-3'>
       {
-        githubProjects.map(githubProject => <GithubProject key={githubProject.name} gitHubProject={githubProject} />)
+        githubProjects.map(githubProject => <GithubProject key={githubProject.keyName} gitHubProject={githubProject} />)
       }
     </section>
   )

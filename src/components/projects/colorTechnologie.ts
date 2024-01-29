@@ -6,7 +6,8 @@ export const tailwindColorsTechnolgies = {
   react: 'lt-color-blue-100',
   node: 'lt-color-green-100',
   express: 'black',
-  java: 'dk-color-red-100'
+  java: 'dk-color-red-100',
+  next: 'black'
 }
 
 export type TailwindColorsTechnolgies = keyof typeof tailwindColorsTechnolgies

@@ -13,7 +13,7 @@ export function WebProjects ({ webProjects, anchorText } : WebProjectsProps) {
   return (
     <div className='flex flex-wrap justify-center gap-3 p-2 font-quickSand'>
       {
-        webProjects.map(webProject => <WebProject key={webProject.name} webProject={webProject} anchorText={anchorText} />)
+        webProjects.map(webProject => <WebProject key={webProject.keyName} webProject={webProject} anchorText={anchorText} />)
       }
     </div>
   )
