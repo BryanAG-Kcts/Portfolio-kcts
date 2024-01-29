@@ -32,3 +32,9 @@
 		gap: 1rem;
 	}
 }
+
+svg,
+path {
+	width: 100%;
+	height: 100%;
+}

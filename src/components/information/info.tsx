@@ -35,7 +35,7 @@ export function Info ({ info } : InfoProps) {
     <span className='flex justify-between gap-5'>
 
       <div className='flex items-center gap-3'>
-        <ReactSVG src={icon} className='w-4 h-4' />
+        <ReactSVG title={name} desc={name} src={icon} className='w-4 h-4' />
         <p className='whitespace-nowrap'>{name} :</p>
       </div>
 
