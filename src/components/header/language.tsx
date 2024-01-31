@@ -1,6 +1,6 @@
 import { useContext } from 'react'
-import { language, languages } from '../../hooks/Iheader'
 import { languageContext } from '../../scripts/constants/languageConstants'
+import { language, languages } from '../../locales/ILanguage'
 
 interface ILanguage {
     language : language
@@ -21,15 +21,15 @@ export const Language = ({ language } : ILanguage) => {
 }
 
 interface ILanguageOption {
-    languageOption : languages
+    languageOption : languages[0]
 }
 
 export const LanguageOption = ({ languageOption } : ILanguageOption) => {
   const { name, value } = languageOption
-  const { setSelectedLanguageFromStore, selectedLanguage } = useContext(languageContext)
+  const { handleSelectLanguage, selectedLanguage } = useContext(languageContext)
 
   const handleChange = () => {
-    setSelectedLanguageFromStore(value)
+    handleSelectLanguage(value)
   }
 
   const isSelected = selectedLanguage === value ? 'bg-lt-color-green-100' : ''

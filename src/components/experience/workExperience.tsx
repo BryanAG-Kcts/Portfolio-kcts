@@ -1,7 +1,7 @@
-import { experience } from '../../hooks/Ilanguage'
+import { experience } from '../../locales/ILanguage'
 
 interface IWorkExperience {
-  experience : experience
+  experience : experience[0]
 }
 
 export const WorkExperience = ({ experience } : IWorkExperience) => {
@@ -18,7 +18,7 @@ export const WorkExperience = ({ experience } : IWorkExperience) => {
 }
 
 interface IWorkExperiences {
-  experiences : experience[]
+  experiences : experience
 }
 
 export const WorkExperiences = ({ experiences } : IWorkExperiences) => {

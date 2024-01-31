@@ -1,16 +1,10 @@
+import { ILanguage } from '../../locales/ILanguage'
 import { languages } from './languageConstants'
-import { ILanguage } from '../../hooks/Ilanguage'
 
 export type possibleLanguages = keyof typeof languages
 
 export interface ILanguageContext extends ILanguage{
-    setSelectedLanguage: (language: possibleLanguages) => void
+    handleSelectLanguage: (language: possibleLanguages) => void
     setLanguage: (language: ILanguage) => void
-    selectedLanguage: possibleLanguages
-    setSelectedLanguageFromStore : (language: possibleLanguages) => void
-}
-
-export interface ICachedLanguage {
-    es: ILanguage
-    en: ILanguage
+    selectedLanguage: possibleLanguages,
 }

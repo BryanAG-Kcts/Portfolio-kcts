@@ -1,9 +1,9 @@
 import { CSSProperties } from 'react'
-import { technologie } from '../../hooks/Ilanguage'
 import { ReactSVG } from 'react-svg'
+import { technologies } from '../../locales/ILanguage'
 
 interface TechnologieProps {
-    technologie : technologie
+    technologie : technologies[0]
     index: number
 }
 export function Technologie ({ technologie, index } : TechnologieProps) {
@@ -22,7 +22,7 @@ export function Technologie ({ technologie, index } : TechnologieProps) {
 }
 
 interface TechnologiesProps {
-  technologies : technologie[]
+  technologies : technologies
 }
 export function Technologies ({ technologies }: TechnologiesProps) {
   return (

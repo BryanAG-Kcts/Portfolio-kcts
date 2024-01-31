@@ -1,11 +1,11 @@
-import { project } from '../../hooks/Ilanguage'
 import { getColorsTechnologie } from '../projects/colorTechnologie'
 import { AlertTechnologies } from './alertTechnologies'
 import { AnchorGrow } from '../../scripts/helpers/anchorGrow'
 import { PulsationCircle } from '../../scripts/helpers/pulsationCircle'
+import { projects } from '../../locales/ILanguage'
 
 interface WebProjectsProps {
-  webProjects: project[]
+  webProjects: projects
   anchorText: string
 }
 
@@ -20,14 +20,14 @@ export function WebProjects ({ webProjects, anchorText } : WebProjectsProps) {
 }
 
 interface WebProjectProps {
-  webProject: project
+  webProject: projects[0]
   anchorText: string
 }
 
 export function WebProject ({ webProject, anchorText } : WebProjectProps) {
   const { name, linkWeb, desc, color, technologies, preview, type, linkGitHub } = webProject
 
-  if (type === 'backend' || !linkWeb) return null
+  if (type === 'backend' || !linkWeb || !technologies) return null
 
   const colorTechnologie = getColorsTechnologie(color)
 

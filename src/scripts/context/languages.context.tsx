@@ -8,7 +8,7 @@ interface LanguageContextProps {
 
 export function LanguageContext ({ children }: LanguageContextProps) {
   return (
-    <languageContext.Provider value={{ ...useLanguage() }}>
+    <languageContext.Provider value={useLanguage()}>
       {children}
     </languageContext.Provider>
   )

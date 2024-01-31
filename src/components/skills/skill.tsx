@@ -5,10 +5,7 @@ import { Technologies } from './technologies'
 export function Skill () {
   const { skill } = useContext(languageContext)
 
-  if (!skill) {
-    return null
-  }
-
+  if (!skill) return null
   const { name, skills } = skill
 
   return (

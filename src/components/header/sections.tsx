@@ -1,4 +1,4 @@
-import { section, sections } from '../../hooks/Iheader'
+import { section, sections } from '../../locales/ILanguage'
 
 interface ISection {
     section : section
@@ -17,7 +17,7 @@ export const Sections = ({ section } : ISection) => {
 }
 
 interface ISections {
-    sections : sections
+    sections : sections[0]
 }
 
 export const Section = ({ sections } : ISections) => {

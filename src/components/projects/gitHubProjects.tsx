@@ -1,8 +1,8 @@
-import { project } from '../../hooks/Ilanguage'
 import { getColorsTechnologie } from './colorTechnologie'
 import { PulsationCircle } from '../../scripts/helpers/pulsationCircle'
+import { projects } from '../../locales/ILanguage'
 interface GithubProjectsProps {
-    githubProjects: project[]
+    githubProjects: projects
 }
 
 export function GithubProjects ({ githubProjects }: GithubProjectsProps) {
@@ -16,7 +16,7 @@ export function GithubProjects ({ githubProjects }: GithubProjectsProps) {
 }
 
 interface GithubProjectProps {
-    gitHubProject: project
+    gitHubProject: projects[0]
 }
 
 export function GithubProject ({ gitHubProject } : GithubProjectProps) {

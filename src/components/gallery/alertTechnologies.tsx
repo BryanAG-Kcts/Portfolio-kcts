@@ -1,8 +1,8 @@
-import { technologie } from '../../hooks/Ilanguage'
+import { technologies } from '../../locales/ILanguage'
 import { Technologies } from '../skills/technologies'
 
 interface AlertTechnologiesProps {
-  technologies : technologie[]
+  technologies : technologies
 }
 
 export function AlertTechnologies ({ technologies } : AlertTechnologiesProps) {

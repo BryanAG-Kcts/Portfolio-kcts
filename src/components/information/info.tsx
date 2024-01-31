@@ -1,5 +1,5 @@
-import { info } from '../../hooks/Ilanguage'
 import { ReactSVG } from 'react-svg'
+import { informations } from '../../locales/ILanguage'
 
 const pointerEvents = {
   none: {
@@ -11,7 +11,7 @@ const pointerEvents = {
 } as const
 
 interface InfosProps {
-  infos: info[]
+  infos: informations
 }
 export function Infos ({ infos }: InfosProps) {
   return (
@@ -24,7 +24,7 @@ export function Infos ({ infos }: InfosProps) {
 }
 
 interface InfoProps {
-  info: info
+  info: informations[0]
 }
 export function Info ({ info } : InfoProps) {
   const { select, answer, icon, link, name } = info
