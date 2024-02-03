@@ -7,9 +7,6 @@ import './experience.css'
 
 export const Experience = () => {
   const { experience } = useContext(languageContext)
-
-  if (!experience) return null
-
   const { experience: experiences, title } = experience
 
   return (

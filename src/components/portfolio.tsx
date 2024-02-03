@@ -1,12 +1,10 @@
-import { useContext, Suspense, lazy } from 'react'
+import { Suspense, lazy } from 'react'
 
 import { Hero } from './hero/hero'
 import { Skill } from './skills/skill'
 import { Project } from './projects/project'
 import { Information } from './information/information'
 import { Header } from './header/header'
-import { languageContext } from '../scripts/constants/languageConstants'
-import { LoaderPage } from './loaderComponent/loader'
 import { Footer } from './footer/footerPage'
 import { Experience } from './experience/experience'
 import { MetaPortfolio } from './metaPortfolio'
@@ -15,10 +13,6 @@ const Gallery = lazy(() => import('./gallery/gallery'))
 const AboutMe = lazy(() => import('./about/aboutMe'))
 
 export function Portfolio () {
-  const { hero } = useContext(languageContext)
-
-  if (!hero) return <LoaderPage />
-
   return (
     <>
       <MetaPortfolio />

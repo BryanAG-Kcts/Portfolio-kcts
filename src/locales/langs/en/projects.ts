@@ -14,7 +14,7 @@ export const projectsDesc = {
   kctsExpressGenerator: 'Simple expressJs project generator',
   backGame2048: 'A game with a tactic that is easy to analyze but difficult to master, play, score points and save your best record',
   kctshort: 'A link shortener, simple, fast and free. There are no ads or waiting time!',
-  landing: 'A simple home page with a 3D touch. Explore and watch it move!'
+  landing: 'A simple home page with a 3D touch. Explore and watch it move! Credits to Prismic'
 }
 
 export const project = {

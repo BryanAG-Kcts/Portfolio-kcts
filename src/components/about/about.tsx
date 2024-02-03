@@ -4,9 +4,6 @@ import { TitleGenerator } from '../../scripts/helpers/titleGenerator'
 
 export const About = () => {
   const { about } = useContext(languageContext)
-
-  if (!about) return null
-
   const { title, paragraphs } = about
 
   return (

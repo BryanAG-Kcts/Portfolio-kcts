@@ -7,11 +7,6 @@ import { DarkMode } from '../../scripts/helpers/darkMode/darkMode'
 
 export function Header () {
   const { header } = useContext(languageContext)
-
-  if (!header) {
-    return null
-  }
-
   const { language, section } = header
 
   return (

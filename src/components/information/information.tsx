@@ -5,9 +5,6 @@ import { Infos } from './info'
 import { LinkGrow } from '../../scripts/helpers/anchorGrow'
 export function Information () {
   const { information, indie, selectedLanguage } = useContext(languageContext)
-
-  if (!information) return null
-
   const { name, infos } = information
   const { cvLink, certificateLink } = indie
 

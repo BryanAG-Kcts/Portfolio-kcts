@@ -26,7 +26,7 @@ export const linksGitHub : Record<possibleProjectsKeyNames, string> = {
   kctsExpressGenerator: 'https://github.com/BryanAG-Kcts/kcts-express-generator',
   kctshort: 'https://github.com/BryanAG-Kcts/kctshort',
   backGame2048: 'https://github.com/BryanAG-Kcts/2048-clone-back',
-  landing: ''
+  landing: 'https://github.com/BryanAG-Kcts/Landing'
 }
 
 export const userGitHub = {

@@ -4,6 +4,11 @@ import { AnchorGrow } from '../../scripts/helpers/anchorGrow'
 import { PulsationCircle } from '../../scripts/helpers/pulsationCircle'
 import { projects } from '../../locales/ILanguage'
 
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useEffect, useRef } from 'react'
+gsap.registerPlugin(ScrollTrigger)
+
 interface WebProjectsProps {
   webProjects: projects
   anchorText: string
@@ -27,6 +32,37 @@ interface WebProjectProps {
 export function WebProject ({ webProject, anchorText } : WebProjectProps) {
   const { name, linkWeb, desc, color, technologies, preview, type, linkGitHub } = webProject
 
+  const element = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      if (element.current) {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: element.current,
+            start: 'top bottom',
+            end: 'bottom top'
+          }
+        })
+
+        tl.fromTo('.technologie-square', {
+          opacity: 0,
+          rotate: 10,
+          y: 100
+        },
+        {
+          opacity: 1,
+          rotate: 0,
+          y: 0,
+          ease: 'elastic.out(1, 0.3)',
+          duration: 1.2
+        })
+      }
+    }, element)
+
+    return () => ctx.revert()
+  }, [])
+
   if (type === 'backend' || !linkWeb || !technologies) return null
 
   const colorTechnologie = getColorsTechnologie(color)
@@ -46,7 +82,7 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
 
       </div>
 
-      <div className='flex-1 gridTechnologie '>
+      <div className='flex-1 gridTechnologie overflow-hidden'>
 
         <div className='flex flex-col justify-between gap-5'>
 
@@ -58,7 +94,7 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
           </div>
         </div>
 
-        <div className='flex items-center flex-1 rounded-lg bg-slate-100 sectionContentDarkmode'>
+        <div ref={element} className='flex items-center flex-1 rounded-lg bg-slate-100 sectionContentDarkmode'>
           <AlertTechnologies technologies={technologies} />
         </div>
       </div>

@@ -70,6 +70,11 @@ export const technologies = {
     name: 'Next JS',
     abbr: 'next',
     icon: `${technologieIconUrl}next.svg`
+  },
+  three: {
+    name: 'Three JS',
+    abbr: 'three',
+    icon: `${technologieIconUrl}three.svg`
   }
 } as const
 

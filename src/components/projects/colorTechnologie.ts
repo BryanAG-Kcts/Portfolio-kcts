@@ -14,7 +14,8 @@ export const tailwindColorsTechnolgies : Record<technologiesAbbreviations, strin
   git: 'black',
   tailwind: 'black',
   mysql: 'black',
-  sql: 'black'
+  sql: 'black',
+  three: 'dk-color-gray-100'
 }
 
 export const getColorsTechnologie = (technologie: technologiesAbbreviations) => tailwindColorsTechnolgies[technologie]

@@ -5,9 +5,6 @@ import { GithubProjects } from './gitHubProjects'
 
 export function Project () {
   const { project } = useContext(languageContext)
-
-  if (!project) return null
-
   const { nameGithub, projects } = project
 
   return (

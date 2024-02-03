@@ -3,7 +3,7 @@ import { possibleProjectTypes, possibleProjectsKeyNames, projectTypes } from './
 import { linksGitHub, linksWeb, projectPreviewUrl } from './projectLinks'
 
 const { backend, frontend, fullStack } = projectTypes
-const { css3, express, html5, mySql, next, javascript, nodejs, react, sql, typescript, tailwindcss } = technologies
+const { css3, express, html5, mySql, next, javascript, nodejs, react, sql, typescript, tailwindcss, three } = technologies
 
 interface IProject {
   name: string
@@ -38,8 +38,8 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   landing: {
     name: 'Landing 3D',
-    technologie: typescript.name,
-    color: typescript.abbr,
+    technologie: three.name,
+    color: three.abbr,
     linkGitHub: linksGitHub.landing,
     keyName: 'landing',
     type: frontend,
@@ -48,7 +48,8 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
     technologies: [
       next,
       typescript,
-      tailwindcss
+      tailwindcss,
+      three
     ]
   },
   kctshort: {

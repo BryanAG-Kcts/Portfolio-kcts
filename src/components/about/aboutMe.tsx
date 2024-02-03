@@ -7,9 +7,6 @@ import { languageContext } from '../../scripts/constants/languageConstants'
 
 const AboutMe = () => {
   const { indie, selectedLanguage } = useContext(languageContext)
-
-  if (!indie) return null
-
   const { cvLink, certificateLink } = indie
 
   return (

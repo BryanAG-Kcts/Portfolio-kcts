@@ -5,9 +5,6 @@ import { UlGenerator } from '../../scripts/helpers/ulGenrator/ulGenerator'
 
 export const SoftSkills = () => {
   const { softSkill } = useContext(languageContext)
-
-  if (!softSkill) return null
-
   const { paragraph, softSkills, title } = softSkill
 
   return (

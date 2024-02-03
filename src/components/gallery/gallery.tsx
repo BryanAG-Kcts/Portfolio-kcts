@@ -6,9 +6,8 @@ import './gallery.css'
 
 function Gallery () {
   const { project } = useContext(languageContext)
-  if (!project) return null
-
   const { nameWeb, projects, anchorName } = project
+
   return (
     <section id='projectsContent' className='greatSection p-4 rounded-lg bg-slate-100 sectionContentDarkmode'>
       <TitleGenerator>
