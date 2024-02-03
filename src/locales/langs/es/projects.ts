@@ -13,7 +13,8 @@ export const projectsDesc = {
   portfolio: '¡Estás aquí 🌵! Bienvenido a mi portafolio personal, encontrarás información sobre mí como de lo que yo hago. Espero que lo disfrutes',
   kctsExpressGenerator: 'Un simple generador de proyectos de expressJs',
   backGame2048: 'Un juego con una táctica sencilla de analizar pero dificil de dominar, juega, haz puntos y guarda tu mejor record',
-  kctshort: 'Un acortador de links, simple, rápido y gratuito. ¡No hay anuncios ni tiempo de espera!'
+  kctshort: 'Un acortador de links, simple, rápido y gratuito. ¡No hay anuncios ni tiempo de espera!',
+  landing: 'Una simple landing page con un toque 3D ¡Explora y observa cómo se mueve!'
 }
 
 export const project = {

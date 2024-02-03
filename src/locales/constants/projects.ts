@@ -36,6 +36,21 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
     keyName: 'sittingnt',
     type: backend
   },
+  landing: {
+    name: 'Landing 3D',
+    technologie: typescript.name,
+    color: typescript.abbr,
+    linkGitHub: linksGitHub.landing,
+    keyName: 'landing',
+    type: frontend,
+    linkWeb: linksWeb.landing,
+    preview: `${projectPreviewUrl}landing.webp`,
+    technologies: [
+      next,
+      typescript,
+      tailwindcss
+    ]
+  },
   kctshort: {
     name: 'Kctshort',
     technologie: next.name,
@@ -163,8 +178,8 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
     name: 'TicTacToe',
     technologie: javascript.name,
     color: javascript.abbr,
-    linkGitHub: linksGitHub.ticTacToe,
-    linkWeb: linksWeb.ticTacToe,
+    linkGitHub: linksGitHub.tictactoe,
+    linkWeb: linksWeb.tictactoe,
     technologies: [
       css3,
       react,

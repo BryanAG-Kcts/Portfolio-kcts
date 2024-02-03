@@ -17,7 +17,8 @@ export const projectsKeyNames = {
   wapiw: 'wapiw.',
   tsDo: 'tsDo',
   infoCountry: 'infoCountry',
-  kactusKraft: 'kactusKraft'
+  kactusKraft: 'kactusKraft',
+  landing: 'landing'
 } as const
 
 export type possibleProjectsKeyNames = keyof typeof projectsKeyNames
