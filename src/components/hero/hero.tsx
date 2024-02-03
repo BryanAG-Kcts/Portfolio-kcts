@@ -48,7 +48,7 @@ export function Hero () {
   }, [])
 
   return (
-    <section id='heroContent' className='bg-lt-color-green-100 w-full flex-col flex items-center justify-center py-10 min-h-[50vh] md:min-h-[70vh] relative font-quickSand  overflow-hidden'>
+    <section id='heroContent' className='bg-lt-color-green-100 w-full flex-col flex items-center justify-center py-10 min-h-[50vh] md:min-h-[70vh] relative font-quickSand'>
       <div className='flex flex-col items-center gap-7 md:flex-row md:gap-0 md:w-[700px] md:justify-between lg:w-[900px]'>
 
         <div ref={heroElement} className='flex flex-col gap-4 px-3 text-center text-white lg:text-left md:max-w-md'>

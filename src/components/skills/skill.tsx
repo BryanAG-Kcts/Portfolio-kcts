@@ -43,7 +43,7 @@ export function Skill () {
   }, [])
 
   return (
-    <section className='overflow-hidden'>
+    <section>
       <div ref={element} className='flex flex-col gap-4'>
         <TitleGenerator>{name}</TitleGenerator>
         <Technologies technologies={skills} />

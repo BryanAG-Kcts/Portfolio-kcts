@@ -55,7 +55,8 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
           rotate: 0,
           y: 0,
           ease: 'elastic.out(1, 0.3)',
-          duration: 1.2
+          duration: 0.6,
+          stagger: 0.2
         })
       }
     }, element)
@@ -82,7 +83,7 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
 
       </div>
 
-      <div className='flex-1 gridTechnologie overflow-hidden'>
+      <div className='flex-1 gridTechnologie'>
 
         <div className='flex flex-col justify-between gap-5'>
 
