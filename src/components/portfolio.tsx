@@ -19,7 +19,7 @@ export function Portfolio () {
       <Header />
       <Hero />
 
-      <section id='mainContent' className='greatSection p-2 sectionContentDarkmode'>
+      <section id='mainContent' className='greatSection p-2 sectionContentDarkmode overflow-x-hidden'>
         <Experience />
 
         <div className='flex flex-col w-full gap-6 p-3 rounded-lg sectionContentDarkmode bg-slate-100 md:flex-row'>
