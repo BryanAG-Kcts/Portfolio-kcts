@@ -33,7 +33,7 @@ export function Skill () {
           rotate: 0,
           y: 0,
           ease: 'elastic.out(1, 0.7)',
-          duration: 2.5,
+          duration: 1,
           stagger: { each: 0.1, from: 'random' }
         })
       }

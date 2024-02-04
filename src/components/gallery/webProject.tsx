@@ -55,8 +55,8 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
           rotate: 0,
           y: 0,
           ease: 'elastic.out(1, 0.3)',
-          duration: 0.6,
-          stagger: 0.2
+          duration: 0.3,
+          stagger: 0.1
         })
       }
     }, element)

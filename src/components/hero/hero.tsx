@@ -26,7 +26,7 @@ export function Hero () {
               y: 0,
               x: 0,
               rotate: 0,
-              duration: 1,
+              duration: 0.7,
               ease: 'elastic.out(1, 0.3)',
               delay: 0.5
             })
@@ -38,7 +38,7 @@ export function Hero () {
             {
               opacity: 1,
               y: 0,
-              duration: 1,
+              duration: 0.5,
               ease: 'elastic.out(1, 0.3)'
             })
       }
