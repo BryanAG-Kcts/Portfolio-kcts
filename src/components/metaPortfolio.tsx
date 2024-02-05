@@ -8,8 +8,6 @@ export const MetaPortfolio = () => {
       <meta name='keywords' content='portafolio,BryanAG,kactus,ocaña,cactus,github,bryan,kcts,kactuswow,cactuswow, portfolio' />
       <meta name='robots' content='index, follow' />
       <link rel='canonical' href='https://portfolio-kcts.vercel.app' />
-
-      <link rel='preload' as='image' href='./src/assets/images/meHero.webp' type='image/webp' />
     </Helmet>
   )
 }
