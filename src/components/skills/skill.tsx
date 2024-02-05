@@ -22,10 +22,10 @@ export function Skill () {
         })
 
         tl.fromTo('.technologie-square', {
-          x: (index) => gsap.utils.random(-50 * (index + 1), 50 * (index + 1)),
+          x: (index) => gsap.utils.random(-100 * (index + 1), 100 * (index + 1)),
           opacity: 0,
           rotate: 20,
-          y: (index) => gsap.utils.random(-50 * (index + 1), 50 * (index + 1))
+          y: (index) => gsap.utils.random(-100 * (index + 1), 100 * (index + 1))
         },
         {
           x: 0,
@@ -34,7 +34,8 @@ export function Skill () {
           y: 0,
           ease: 'elastic.out(1, 0.7)',
           duration: 1,
-          stagger: { each: 0.1, from: 'random' }
+          delay: 0.4,
+          stagger: { from: 'random' }
         })
       }
     }, element)
