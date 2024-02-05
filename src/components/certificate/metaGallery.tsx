@@ -11,7 +11,7 @@ export const MetaGallery = () => {
       <meta name='description' content='Una simple galeria sobre el camino de mi estudio' />
       <meta name='keywords' content='kactuswow, kactus, kcts, certificados, programador, ocaña, portafolio' />
       <meta name='robots' content='index, follow' />
-      <link rel='canonical' href={`https://portfolio-kcts.vercel.app/langs/${selectedLanguage}`} />
+      <link rel='canonical' href={`https://portfolio-kcts.vercel.app/certificate/langs/${selectedLanguage}`} />
     </Helmet>
   )
 }
