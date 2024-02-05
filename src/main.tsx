@@ -24,23 +24,17 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <TitleWindow />
 
     <HelmetProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path='/' element={
-              <LanguageContext>
-                <Portfolio />
-              </LanguageContext>
-          }
-          />
-          <Route path='/cv' element={<Curriculum />} />
-
-          <Route path='/certificate/:certificate' element={<Certificate />} />
-          <Route path='/certificate/langs/:lang' element={<GalleryCertificates />} />
-
-          <Route path='*' element={<Page404 />} />
-        </Routes>
-      </BrowserRouter>
+      <LanguageContext>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Portfolio />} />
+            <Route path='/certificate/langs/:lang' element={<GalleryCertificates />} />
+            <Route path='/cv' element={<Curriculum />} />
+            <Route path='/certificate/:certificate' element={<Certificate />} />
+            <Route path='*' element={<Page404 />} />
+          </Routes>
+        </BrowserRouter>
+      </LanguageContext>
     </HelmetProvider>
 
   </>
