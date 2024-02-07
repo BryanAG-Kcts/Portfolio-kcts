@@ -16,7 +16,7 @@ export const GalleryCertificates = () => {
   return (
     <>
       <MetaGallery />
-      <main className='flex flex-col items-center py-7 font-quickSand gap-7 px-3 bgPolygonal relative'>
+      <main className='flex flex-col items-center py-7 font-quickSand gap-7 px-3 bgPolygonal relative overflow-x-hidden'>
         <article className='text-white'>
           <TitleGenerator>{title}</TitleGenerator>
           <p className='text-center my-3'>{paragraph}</p>

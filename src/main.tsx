@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client'
 import { LanguageContext } from './scripts/context/languages.context'
 import { Portfolio } from './components/portfolio'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { Curriculum } from './components/curriculum/curriculum'
 import { Page404 } from './404 page/page404'
 import { Certificate } from './components/certificate/certificate'
@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
     <HelmetProvider>
       <LanguageContext>
-        <BrowserRouter>
+        <Router>
           <Routes>
             <Route path='/' element={<Portfolio />} />
             <Route path='/certificate/langs/:lang' element={<GalleryCertificates />} />
@@ -33,7 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
             <Route path='/certificate/:certificate' element={<Certificate />} />
             <Route path='*' element={<Page404 />} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </LanguageContext>
     </HelmetProvider>
 

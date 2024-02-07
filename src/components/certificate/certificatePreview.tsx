@@ -35,8 +35,7 @@ export const CertificatePreview = ({ certificate } : CertificatePreviewProps) =>
         scrollTrigger: {
           trigger: element.current,
           start: 'top bottom',
-          end: 'bottom top',
-          markers: true
+          end: 'bottom top'
         }
       })
 
