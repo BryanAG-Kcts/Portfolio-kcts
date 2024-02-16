@@ -18,7 +18,8 @@ export const projectsKeyNames = {
   tsDo: 'tsDo',
   infoCountry: 'infoCountry',
   kactusKraft: 'kactusKraft',
-  landing: 'landing'
+  landing: 'landing',
+  kctsground: 'kctsGround'
 } as const
 
 export type possibleProjectsKeyNames = keyof typeof projectsKeyNames

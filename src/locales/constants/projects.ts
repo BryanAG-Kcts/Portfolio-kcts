@@ -7,7 +7,7 @@ const { css3, express, html5, mySql, next, javascript, nodejs, react, sql, types
 
 interface IProject {
   name: string
-  technologie: string
+  technology: string
   color: technologiesAbbreviations
   linkGitHub: string
   type: possibleProjectTypes
@@ -22,7 +22,7 @@ interface IProject {
 export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   portfolio: {
     name: 'Kactuswow',
-    technologie: typescript.name,
+    technology: typescript.name,
     color: typescript.abbr,
     linkGitHub: linksGitHub.portfolio,
     keyName: 'portfolio',
@@ -30,15 +30,31 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   sittingnt: {
     name: "Sittingn't",
-    technologie: css3.name,
+    technology: css3.name,
     color: css3.abbr,
     linkGitHub: linksGitHub.sittingnt,
     keyName: 'sittingnt',
     type: backend
   },
+  kctsground: {
+    name: 'Kctsground',
+    technology: typescript.name,
+    color: typescript.abbr,
+    linkGitHub: linksGitHub.kctsground,
+    keyName: 'kctsground',
+    type: frontend,
+    technologies: [
+      next,
+      typescript,
+      tailwindcss,
+      css3
+    ],
+    linkWeb: linksWeb.kctsground,
+    preview: `${projectPreviewUrl}kctsGround.webp`
+  },
   landing: {
     name: 'Landing 3D',
-    technologie: three.name,
+    technology: three.name,
     color: three.abbr,
     linkGitHub: linksGitHub.landing,
     keyName: 'landing',
@@ -54,7 +70,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   kctshort: {
     name: 'Kctshort',
-    technologie: next.name,
+    technology: next.name,
     color: next.abbr,
     linkGitHub: linksGitHub.kctshort,
     linkWeb: linksWeb.kctshort,
@@ -71,7 +87,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   game2048: {
     name: '2048',
-    technologie: typescript.name,
+    technology: typescript.name,
     color: typescript.abbr,
     linkGitHub: linksGitHub.game2048,
     linkWeb: linksWeb.game2048,
@@ -89,7 +105,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   simpleTranslate: {
     name: 'SimpleTranslate',
-    technologie: typescript.name,
+    technology: typescript.name,
     color: typescript.abbr,
     linkGitHub: linksGitHub.simpleTranslate,
     linkWeb: linksWeb.simpleTranslate,
@@ -105,7 +121,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   infoCountry: {
     name: 'InfoCountry',
-    technologie: typescript.name,
+    technology: typescript.name,
     color: typescript.abbr,
     linkGitHub: linksGitHub.infoCountry,
     linkWeb: linksWeb.infoCountry,
@@ -121,7 +137,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   kactusKraft: {
     name: 'KactusKraft',
-    technologie: javascript.name,
+    technology: javascript.name,
     color: javascript.abbr,
     linkGitHub: linksGitHub.kactusKraft,
     linkWeb: linksWeb.kactusKraft,
@@ -137,7 +153,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   tsDo: {
     name: 'Ts Do',
-    technologie: typescript.name,
+    technology: typescript.name,
     color: typescript.abbr,
     linkGitHub: linksGitHub.tsDo,
     linkWeb: linksWeb.tsDo,
@@ -153,7 +169,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   button: {
     name: 'The button',
-    technologie: javascript.name,
+    technology: javascript.name,
     color: javascript.abbr,
     linkGitHub: linksGitHub.button,
     linkWeb: linksWeb.button,
@@ -169,7 +185,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   wapiw: {
     name: 'WapiW',
-    technologie: javascript.name,
+    technology: javascript.name,
     color: javascript.abbr,
     linkGitHub: linksGitHub.wapiw,
     keyName: 'wapiw',
@@ -177,7 +193,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   tictactoe: {
     name: 'TicTacToe',
-    technologie: javascript.name,
+    technology: javascript.name,
     color: javascript.abbr,
     linkGitHub: linksGitHub.tictactoe,
     linkWeb: linksWeb.tictactoe,
@@ -193,7 +209,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   kctsExpressGenerator: {
     name: 'Kcts-Express-Generator',
-    technologie: typescript.name,
+    technology: typescript.name,
     color: typescript.abbr,
     linkGitHub: linksGitHub.kctsExpressGenerator,
     keyName: 'kctsExpressGenerator',
@@ -201,7 +217,7 @@ export const projectsBody : Record<possibleProjectsKeyNames, IProject> = {
   },
   backGame2048: {
     name: '2048',
-    technologie: express.name,
+    technology: express.name,
     color: express.abbr,
     linkGitHub: linksGitHub.backGame2048,
     keyName: 'backGame2048',

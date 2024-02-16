@@ -9,7 +9,8 @@ export const linksWeb = {
   tsDo: 'https://bryanag-kcts.github.io/TsDo-Kcts',
   game2048: 'https://2048-clone-tawny.vercel.app/',
   kctshort: 'https://kctshort.vercel.app',
-  landing: 'https://landing-one-vert.vercel.app'
+  landing: 'https://landing-one-vert.vercel.app',
+  kctsground: 'https://kcts-ground.vercel.app/'
 }
 
 export const linksGitHub : Record<possibleProjectsKeyNames, string> = {
@@ -26,7 +27,8 @@ export const linksGitHub : Record<possibleProjectsKeyNames, string> = {
   kctsExpressGenerator: 'https://github.com/BryanAG-Kcts/kcts-express-generator',
   kctshort: 'https://github.com/BryanAG-Kcts/kctshort',
   backGame2048: 'https://github.com/BryanAG-Kcts/2048-clone-back',
-  landing: 'https://github.com/BryanAG-Kcts/Landing'
+  landing: 'https://github.com/BryanAG-Kcts/Landing',
+  kctsground: 'https://github.com/BryanAG-Kcts/kcts-ground'
 }
 
 export const userGitHub = {

@@ -1,4 +1,4 @@
-import { getColorsTechnologie } from './colorTechnologie'
+import { getColorsTechnology } from './colorTechnologie'
 import { PulsationCircle } from '../../scripts/helpers/pulsationCircle'
 import { projects } from '../../locales/ILanguage'
 interface GithubProjectsProps {
@@ -20,11 +20,11 @@ interface GithubProjectProps {
 }
 
 export function GithubProject ({ gitHubProject } : GithubProjectProps) {
-  const { name, color, linkGitHub, technologie, desc, type } = gitHubProject
+  const { name, color, linkGitHub, technology, desc, type } = gitHubProject
 
   if (type === 'frontend') return
 
-  const colorTailwind = getColorsTechnologie(color)
+  const colorTailwind = getColorsTechnology(color)
 
   return (
     <a href={linkGitHub} target='_blank' rel='noreferrer' className='relative bg-white rounded-2xl px-5 py-7 min-w-[200px] max-w-[600px] flex-1 lg:min-w-[400px] shadow-lg transition-transform hover:scale-[101%] hover:z-10 ssm:hover:scale-95 cardContentDarkmode'>
@@ -36,7 +36,7 @@ export function GithubProject ({ gitHubProject } : GithubProjectProps) {
 
       <div className='absolute flex items-center gap-4 bottom-5 right-5'>
         <PulsationCircle color={colorTailwind} />
-        <p className='text-sm font-semibold font-quickSand'>{technologie}</p>
+        <p className='text-sm font-semibold font-quickSand'>{technology}</p>
       </div>
     </a>
   )

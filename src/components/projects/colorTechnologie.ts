@@ -1,6 +1,6 @@
 import { technologiesAbbreviations } from '../../locales/constants/technologies'
 
-export const tailwindColorsTechnolgies : Record<technologiesAbbreviations, string> = {
+export const tailwindColorsTechnologies : Record<technologiesAbbreviations, string> = {
   ts: 'dk-color-blue-100',
   js: 'lt-color-yellow-100',
   html: 'dk-color-red-100',
@@ -18,4 +18,4 @@ export const tailwindColorsTechnolgies : Record<technologiesAbbreviations, strin
   three: 'dk-color-gray-100'
 }
 
-export const getColorsTechnologie = (technologie: technologiesAbbreviations) => tailwindColorsTechnolgies[technologie]
+export const getColorsTechnology = (technology: technologiesAbbreviations) => tailwindColorsTechnologies[technology]

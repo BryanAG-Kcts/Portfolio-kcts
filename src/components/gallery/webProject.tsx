@@ -1,4 +1,4 @@
-import { getColorsTechnologie } from '../projects/colorTechnologie'
+import { getColorsTechnology } from '../projects/colorTechnologie'
 import { AlertTechnologies } from './alertTechnologies'
 import { AnchorGrow } from '../../scripts/helpers/anchorGrow'
 import { PulsationCircle } from '../../scripts/helpers/pulsationCircle'
@@ -66,7 +66,7 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
 
   if (type === 'backend' || !linkWeb || !technologies) return null
 
-  const colorTechnologie = getColorsTechnologie(color)
+  const colorTechnology = getColorsTechnology(color)
 
   return (
     <div className='relative flex flex-col max-w-sm gap-3 p-2 bg-white rounded-lg cardContentDarkmode'>
@@ -78,7 +78,7 @@ export function WebProject ({ webProject, anchorText } : WebProjectProps) {
 
         <div className='flex items-center gap-7'>
           <h3 className='text-lg font-semibold'>{name}</h3>
-          <PulsationCircle color={colorTechnologie} />
+          <PulsationCircle color={colorTechnology} />
         </div>
 
       </div>

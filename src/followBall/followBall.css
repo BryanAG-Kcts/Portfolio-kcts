@@ -2,21 +2,6 @@
     position: absolute;
     top: var(--moveY, 0);
     left: var(--moveX, 0);
-    transition:
-        top 0.15s,
-        left 0.15s;
-    -webkit-transition:
-        top 0.15s,
-        left 0.15s;
-    -moz-transition:
-        top 0.15s,
-        left 0.15s;
-    -ms-transition:
-        top 0.15s,
-        left 0.15s;
-    -o-transition:
-        top 0.15s,
-        left 0.15s;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
