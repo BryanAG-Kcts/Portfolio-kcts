@@ -14,7 +14,7 @@ export const linksWeb = {
 }
 
 export const linksGitHub : Record<possibleProjectsKeyNames, string> = {
-  portfolio: 'https://github.com/BryanAG-Kcts/Portafolio-Kcts',
+  portfolio: 'https://github.com/BryanAG-Kcts/Portfolio-kcts',
   button: 'https://github.com/BryanAG-Kcts/The_Button',
   sittingnt: 'https://github.com/Cactuswow/Sittingn-t',
   wapiw: 'https://github.com/BryanAG-Kcts/WAPIW',
