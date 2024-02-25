@@ -9,13 +9,13 @@ Thank you for visiting my web portfolio. I hope you enjoy exploring my work and 
 1. Clone or download the repo
 
 ```bash
-  git clone https://github.com/BryanAG-Kcts/Portafolio-Kcts.git
+  git clone https://github.com/BryanAG-Kcts/Portfolio-Kcts.git
 ```
 
 2. Change the directory
 
 ```bash
-  cd Portafolio-Kcts
+  cd Portfolio-Kcts
 ```
 
 3. Install dependencies
@@ -33,8 +33,8 @@ Thank you for visiting my web portfolio. I hope you enjoy exploring my work and 
 ## 🚀 Installation & run locally
 
 ```bash
-  git clone https://github.com/BryanAG-Kcts/Portafolio-Kcts.git
-  cd Portafolio-Kcts
+  git clone https://github.com/BryanAG-Kcts/Portfolio-Kcts.git
+  cd Portfolio-Kcts
   npm install
   npm run dev
 ```
